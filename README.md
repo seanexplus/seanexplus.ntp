@@ -12,6 +12,7 @@ Role Variables
 --------------
 
 customServer: True/False
+
 ntpServer: server
 
 Dependencies
