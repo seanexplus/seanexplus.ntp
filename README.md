@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/seanexplus/seanexplus.ntp.svg?branch=master)](https://travis-ci.org/seanexplus/seanexplus.ntp)
+
 seanexplus.ntp
 ============
 
