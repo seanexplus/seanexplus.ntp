@@ -1,0 +1,11 @@
+---
+# task file to install ntp service
+- name: insall ntp service      
+  yum: name=ntp state=latest
+- name: modify the default ntpd.conf
+  template: src=templates/ntp.conf.j2 dest=/etc/ntp.conf
+  when: customServer 
+- name: change firewall related configuration              
+  firewalld: service=ntp permanent=true state=enabled 
+- name: start ntp service
+  service: name=ntpd state=restarted enabled=true
